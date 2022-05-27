@@ -1,6 +1,5 @@
 import React from "react";
 import { css } from "@emotion/core";
-
 export const style = css`
   pre {
     background-color: blue;
@@ -13,7 +12,7 @@ export const renderFunction = (document) => (
     <div className="container">
       <div className="row d-flex justify-content-center">
         <div className="col-6 text-left">
-          <h1>Tile rendered from a common function:  {document.title}</h1>
+          <h1>Tile rendered from a common function:  {document?.foo?.title}</h1>
         </div>
       </div>
     </div>
