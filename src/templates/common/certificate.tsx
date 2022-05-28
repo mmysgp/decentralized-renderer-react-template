@@ -1,4 +1,5 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
+import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
 export const style = css`
   pre {
@@ -18,10 +19,15 @@ export const renderFunction = (document) => (
     </div>
   );
 
-export const Certificate = ({logo, left}) => ({ document })=> (
+export type TemplateParam = Readonly<{
+  logo: string
+  left: boolean
+}>
+
+export default (param?: TemplateParam) => ({document})=> (
 <div css={style} className="center" id="custom-template">
       <div>
-        <h1>logo: {logo}   left: {left}</h1>
+        <h1>logo: {param?.logo}   left: {String(param?.left)}</h1>
         <h1>{document?.foo?.title ?? "Default title"}</h1>
         <pre>{JSON.stringify(document, null, 2)}</pre>
       </div>

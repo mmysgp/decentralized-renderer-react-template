@@ -1,7 +1,7 @@
 import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
 import { object } from "@storybook/addon-knobs";
 import { Custom1Template } from "./custom1Template";
-import { custom1TemplateCertificate } from "../samples";
+import { custom1TemplateCertificate } from "../samples/custom1TemplateSample";
 
 <Meta title="MDX|Custom1Template" component={Custom1Template} />
 
@@ -17,6 +17,6 @@ import { custom1TemplateCertificate } from "../samples";
 
 <Preview>
   <Story name="basic sample">
-    <CustomTemplate document={object("document", custom1TemplateCertificate)} />
+    <Custom1Template document={object("document", custom1TemplateCertificate)} />
   </Story>
 </Preview>

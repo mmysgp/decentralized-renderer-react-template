@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
 import { Custom1TemplateCertificate } from "../samples/custom1TemplateSample";
-import { Certificate} from "../common/certificate";
+import Certificate from "../common/certificate";
 
 const style = css`
   pre {
