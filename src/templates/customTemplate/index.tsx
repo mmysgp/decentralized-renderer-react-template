@@ -1,6 +1,5 @@
-import { CustomTemplate } from "./customTemplate";
-import { Custom1Template } from "./custom1Template";
 import styled from "@emotion/styled";
+import { CustomTemplate } from "./customTemplate";
 
 export const templates = [
   {
@@ -14,11 +13,6 @@ export const templates = [
     template: styled(CustomTemplate)`
       color: blue;
     `
-  },
-  {
-    id: "custom1",
-    label: "Custom1",
-    template: Custom1Template
-  },
+  }
 ];
 

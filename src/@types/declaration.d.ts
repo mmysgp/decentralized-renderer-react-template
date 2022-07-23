@@ -15,3 +15,11 @@ declare module "@percy/testcafe" {
   const value: any;
   export default value;
 }
+
+declare module "*.scss" {
+  interface ClassNames {
+    [className: string]: string;
+  }
+  const classNames: ClassNames;
+  export = classNames;
+}

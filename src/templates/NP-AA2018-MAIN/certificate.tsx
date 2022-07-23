@@ -1,8 +1,9 @@
 import React, { FunctionComponent } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
-import { Custom1TemplateCertificate } from "../samples/custom1TemplateSample";
+import { FTTemplateCertificate } from "../samples/ftTemplateSample";
 import Certificate from "../common/certificate";
+import { IMG_LOGO_SEED } from "../common/images";
 
 const style = css`
   pre {
@@ -12,7 +13,7 @@ const style = css`
   }
 `;
 
-export const Custom1Template: FunctionComponent<TemplateProps<Custom1TemplateCertificate>> = Certificate({
-  logo: "test",
-  left: true
+export const CertrificateTemplate: FunctionComponent<TemplateProps<FTTemplateCertificate>> = Certificate({
+  logo: IMG_LOGO_SEED,
+  left: false
 });
