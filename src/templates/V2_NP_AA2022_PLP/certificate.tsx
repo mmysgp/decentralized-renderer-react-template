@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
-import { FTTemplateCertificate } from "../samples";
+import { FTTemplateCertificate } from "../samples/ftTemplateSample";
 import Certificate from "../common/certificate";
 import { IMG_LOGO_SEED } from "../common/images";
 

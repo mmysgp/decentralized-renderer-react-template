@@ -1,9 +1,9 @@
 import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
 import { object } from "@storybook/addon-knobs";
 import { CertrificateTemplate } from "./certificate";
-import { ftTemplateCertificate } from "../samples";
+import { ftmain22TemplateCertificate } from "../samples";
 
-<Meta title="MDX|NP-AA2018-MAIN-Certrificate-Template" component={CertrificateTemplate} />
+<Meta title="MDX|V2_AA2022_FT_MAIN_Certrificate" component={CertrificateTemplate} />
 
 # CustomTemplate component
 
@@ -16,7 +16,7 @@ import { ftTemplateCertificate } from "../samples";
 # Usage
 
 <Preview>
-  <Story name="basic sample">
-    <CertrificateTemplate document={object("document", ftTemplateCertificate)} />
+  <Story name="certrificate sample">
+    <CertrificateTemplate document={object("document", ftmain22TemplateCertificate)} />
   </Story>
 </Preview>

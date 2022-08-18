@@ -1,6 +1,6 @@
 import { v2 } from "@govtechsg/open-attestation";
 
-export interface FTTemplateCertificate extends v2.OpenAttestationDocument {
+export interface PLP22TemplateCertificate extends v2.OpenAttestationDocument {
   name: string;
   description: string;
   issuedOn: string;
@@ -49,7 +49,7 @@ export interface FTTemplateCertificate extends v2.OpenAttestationDocument {
   };
 }
 
-export const ftTemplateCertificate: FTTemplateCertificate = {
+export const plp22TemplateCertificate: PLP22TemplateCertificate = {
   "id": "BMS200002:FT:12345678A_BMS_BMS_CLT_2020",
   "description": "BIOMEDICAL SCIENCE",
   "issuedOn": "2020-05-30T00:00:00+08:00",

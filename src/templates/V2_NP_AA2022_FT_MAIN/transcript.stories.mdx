@@ -1,9 +1,9 @@
 import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
 import { object } from "@storybook/addon-knobs";
 import { TranscriptTemplate } from "./transcript";
-import { ftTemplateCertificate } from "../samples";
+import { ftmain22TemplateCertificate } from "../samples";
 
-<Meta title="MDX|NP-AA2018-MAIN-Transcript-Template" component={TranscriptTemplate} />
+<Meta title="MDX|V2_AA2022_FT_MAIN_Transcript" component={TranscriptTemplate} />
 
 # CustomTemplate component
 
@@ -16,7 +16,7 @@ import { ftTemplateCertificate } from "../samples";
 # Usage
 
 <Preview>
-  <Story name="basic sample">
-    <TranscriptTemplate document={object("document", ftTemplateCertificate)} />
+  <Story name="transcript sample">
+    <TranscriptTemplate document={object("document", ftmain22TemplateCertificate)} />
   </Story>
 </Preview>

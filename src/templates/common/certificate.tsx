@@ -74,107 +74,129 @@ export const renderLogoNPPartner = (logo: string, left: boolean) => (
     <div className="col-1" />
   </div>
 );
+
 export const renderFourSignatures = (document: any) => (
   <div>
     <div
-      className="row d-flex justify-content-center align-items-end"
+      className="row d-flex justify-content-center align-items-center"
       style={{ marginTop: "8rem", marginBottom: "1rem" }}
     >
       <div className="col-4" />
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={get(
-              document,
-              "additionalData.certSignatories[0].signature"
-            )}
-          />
-          <hr />
+      <div className="col-8">
+        <div
+          className="row d-flex justify-content-center align-items-end"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <div className="col-6">
+            <div className="px-4">
+              <img
+                style={fullWidthStyle}
+                src={get(document, "additionalData.certSignatories[0].signature")}
+              />
+              <hr />
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="px-4">
+              <img
+                style={fullWidthStyle}
+                src={get(document, "additionalData.certSignatories[1].signature")}
+              />
+              <hr />
+            </div>
+          </div>
+        </div>  
+
+        <div
+          className="row d-flex justify-content-center align-items-top"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <div className="col-6">
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[0].name")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[0].position")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[0].organisation")}
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[1].name")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[1].position")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[1].organisation")}
+            </div>
+          </div>
         </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[0].name")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[0].position")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[0].organisation")}
-        </div>
-      </div>
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={get(
-              document,
-              "additionalData.certSignatories[1].signature"
-            )}
-          />
-          <hr />
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[1].name")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[1].position")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[1].organisation")}
-        </div>
-      </div>
+      </div>    
     </div>
     <div
-      className="row d-flex justify-content-center align-items-end"
+      className="row d-flex justify-content-center align-items-center"
       style={{ marginTop: "1rem", marginBottom: "1rem" }}
     >
       <div className="col-4">
         <img style={fullWidthStyle} src={IMG_CERTIFICATE_SEAL} />
       </div>
 
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={get(
-              document,
-              "additionalData.certSignatories[2].signature"
-            )}
-          />
-          <hr />
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[2].name")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[2].position")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[2].organisation")}
-        </div>
-      </div>
+      <div className="col-8">
+        <div
+          className="row d-flex justify-content-center align-items-end"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <div className="col-6">
+            <div className="px-4">
+              <img
+                style={fullWidthStyle}
+                src={get(document, "additionalData.certSignatories[2].signature")}
+              />
+              <hr />
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="px-4">
+              <img
+                style={fullWidthStyle}
+                src={get(document, "additionalData.certSignatories[3].signature")}
+              />
+              <hr />
+            </div>
+          </div>
+        </div>  
 
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={get(
-              document,
-              "additionalData.certSignatories[3].signature"
-            )}
-          />
-          <hr />
+        <div
+          className="row d-flex justify-content-center align-items-top"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <div className="col-6">
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[2].name")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[2].position")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[2].organisation")}
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[3].name")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[3].position")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[3].organisation")}
+            </div>
+          </div>
         </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[3].name")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[3].position")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[3].organisation")}
-        </div>
-      </div>
+      </div>    
     </div>
   </div>
 );
@@ -210,106 +232,132 @@ export const renderThreeSignatures = (document: any) => (
       <div className="col-2" />
     </div>
     <div
-      className="row d-flex justify-content-center align-items-end"
+      className="row d-flex justify-content-center align-items-center"
       style={{ marginTop: "1rem", marginBottom: "1rem" }}
     >
       <div className="col-4">
         <img style={fullWidthStyle} src={IMG_CERTIFICATE_SEAL} />
       </div>
 
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={get(
-              document,
-              "additionalData.certSignatories[1].signature"
-            )}
-          />
-          <hr />
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[1].name")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[1].position")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[1].organisation")}
-        </div>
-      </div>
+      <div className="col-8">
+        <div
+          className="row d-flex justify-content-center align-items-end"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <div className="col-6">
+            <div className="px-4">
+              <img
+                style={fullWidthStyle}
+                src={get(document, "additionalData.certSignatories[1].signature")}
+              />
+              <hr />
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="px-4">
+              <img
+                style={fullWidthStyle}
+                src={get(document, "additionalData.certSignatories[2].signature")}
+              />
+              <hr />
+            </div>
+          </div>
+        </div>  
 
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={get(
-              document,
-              "additionalData.certSignatories[2].signature"
-            )}
-          />
-          <hr />
+        <div
+          className="row d-flex justify-content-center align-items-top"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <div className="col-6">
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[1].name")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[1].position")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[1].organisation")}
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[2].name")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[2].position")}
+            </div>
+            <div className="text-center">
+              {get(document, "additionalData.certSignatories[2].organisation")}
+            </div>
+          </div>
         </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[2].name")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[2].position")}
-        </div>
-        <div className="text-center">
-          {get(document, "additionalData.certSignatories[2].organisation")}
-        </div>
-      </div>
+      </div>    
     </div>
   </div>
 );
 
 export const renderTwoSignatures = (document: any) => (
   <div
-    className="row d-flex justify-content-center align-items-end"
+    className="row d-flex justify-content-center align-items-center"
     style={{ marginTop: "8rem", marginBottom: "1rem" }}
   >
     <div className="col-4">
       <img style={fullWidthStyle} src={IMG_CERTIFICATE_SEAL} />
     </div>
 
-    <div className="col-4">
-      <div className="px-4">
-        <img
-          style={fullWidthStyle}
-          src={get(document, "additionalData.certSignatories[0].signature")}
-        />
-        <hr />
-      </div>
-      <div className="text-center">
-        {get(document, "additionalData.certSignatories[0].name")}
-      </div>
-      <div className="text-center">
-        {get(document, "additionalData.certSignatories[0].position")}
-      </div>
-      <div className="text-center">
-        {get(document, "additionalData.certSignatories[0].organisation")}
-      </div>
-    </div>
+    <div className="col-8">
+      <div
+        className="row d-flex justify-content-center align-items-end"
+        style={{ marginTop: "1rem", marginBottom: "1rem" }}
+      >
+        <div className="col-6">
+          <div className="px-4">
+            <img
+              style={fullWidthStyle}
+              src={get(document, "additionalData.certSignatories[0].signature")}
+            />
+            <hr />
+          </div>
+        </div>
+        <div className="col-6">
+          <div className="px-4">
+            <img
+              style={fullWidthStyle}
+              src={get(document, "additionalData.certSignatories[1].signature")}
+            />
+            <hr />
+          </div>
+        </div>
+      </div>  
 
-    <div className="col-4">
-      <div className="px-4">
-        <img
-          style={fullWidthStyle}
-          src={get(document, "additionalData.certSignatories[1].signature")}
-        />
-        <hr />
+      <div
+        className="row d-flex justify-content-center align-items-top"
+        style={{ marginTop: "1rem", marginBottom: "1rem" }}
+      >
+        <div className="col-6">
+          <div className="text-center">
+            {get(document, "additionalData.certSignatories[0].name")}
+          </div>
+          <div className="text-center">
+            {get(document, "additionalData.certSignatories[0].position")}
+          </div>
+          <div className="text-center">
+            {get(document, "additionalData.certSignatories[0].organisation")}
+          </div>
+        </div>
+        <div className="col-6">
+          <div className="text-center">
+            {get(document, "additionalData.certSignatories[1].name")}
+          </div>
+          <div className="text-center">
+            {get(document, "additionalData.certSignatories[1].position")}
+          </div>
+          <div className="text-center">
+            {get(document, "additionalData.certSignatories[1].organisation")}
+          </div>
+        </div>
       </div>
-      <div className="text-center">
-        {get(document, "additionalData.certSignatories[1].name")}
-      </div>
-      <div className="text-center">
-        {get(document, "additionalData.certSignatories[1].position")}
-      </div>
-      <div className="text-center">
-        {get(document, "additionalData.certSignatories[1].organisation")}
-      </div>
-    </div>
+    </div>    
   </div>
 );
 
