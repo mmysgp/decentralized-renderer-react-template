@@ -653,7 +653,7 @@ export const renderSignature = (document: any) => (
 
 
 export default (param?: TemplateParam) => ({document}:{document: any})=> (
-  <div className="container" style={{ fontSize: "0.9rem" }}>
+  <div className="container" style={{ fontSize: "0.9rem" }} id="template">
     {param?.logo ? renderHeaderNPPartner(param?.logo, param?.left, document) : renderHeaderNP(document)}
 	{isCETDiploma(document.id)?renderCETGradingSystem():renderFTGradingSystem()}
     {renderTranscript(document)}

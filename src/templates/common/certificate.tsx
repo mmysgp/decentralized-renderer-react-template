@@ -427,6 +427,7 @@ export default (param?: TemplateParam) => ({document}:{document: any})=> (
     <div
       className="container"
       style={{ border: 5, borderColor: "#AAA", borderStyle: "solid" }}
+      id="template"
     >
       {param?.logo ? renderLogoNPPartner(param?.logo, param?.left) : renderLogoNP()}
       {!param?.logo ? renderSingapore() : ""}
