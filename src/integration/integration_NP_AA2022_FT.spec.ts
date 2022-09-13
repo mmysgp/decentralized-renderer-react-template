@@ -1,6 +1,7 @@
 import { Selector } from "testcafe";
 import { FTMain22TemplateCertificate, ftmain22TemplateCertificate } from "../templates/samples";
 
+// assign certificate to a variable otherwise there is an error ..
 const document: FTMain22TemplateCertificate = {
   ...ftmain22TemplateCertificate
 };
