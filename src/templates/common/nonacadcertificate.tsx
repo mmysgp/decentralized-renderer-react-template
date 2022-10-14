@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import { get } from "lodash";
 import "bootstrap/dist/css/bootstrap.css";
 import { TemplateParam } from "./commontype"

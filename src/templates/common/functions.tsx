@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import { tz } from "moment-timezone";
 
 export const TIMEZONE = "Asia/Singapore";
@@ -53,8 +53,6 @@ export const formatDatePrefix = (dateString: string) => {
       case 3:
         daySup = "rd";
         break;
-      default:
-        daySup = "th";
     }
   }
 

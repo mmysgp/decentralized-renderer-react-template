@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { CertrificateTemplate } from "./certificate";
 import { TranscriptTemplate } from "./transcript";
 
