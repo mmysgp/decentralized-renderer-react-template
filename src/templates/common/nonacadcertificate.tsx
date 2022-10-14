@@ -18,9 +18,8 @@ import {
 } from "./certificate";
 
 export const formatCertName = (certId: string, certName: string) => {
-  let [certPrefix, certDescr] = ["", ""];
   let delimiter = "leading to the";
-  [certPrefix, certDescr] = splitStringTo2(certName, " leading to the ");
+  let [certPrefix, certDescr] = splitStringTo2(certName, " leading to the ");
 
   if (!certPrefix) {
     delimiter = "in";
